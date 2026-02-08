@@ -13,9 +13,9 @@ from AloneMusic.plugins.sudo.sudoers import sudoers_list
 from AloneMusic.utils.database import (add_served_chat, add_served_user,
                                        blacklisted_chats, get_lang,
                                        is_banned_user, is_on_off)
-from Spy.utils.decorators.language import LanguageStart
-from Spy.utils.formatters import get_readable_time
-from Spy.utils.inline import first_page, private_panel, start_panel
+from AloneMusic.utils.decorators.language import LanguageStart
+from AloneMusic.utils.formatters import get_readable_time
+from AloneMusic.utils.inline import first_page, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 

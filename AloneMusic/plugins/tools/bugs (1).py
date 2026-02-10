@@ -2,7 +2,7 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 from config import OWNER_ID as owner_id
-from RiyaMusic import app
+from AloneMusic import app
 
 def content(msg: Message) -> [None, str]:
     text_to_return = msg.text

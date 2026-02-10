@@ -8,8 +8,8 @@ from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import ChatPrivileges, Message
 
-from RiyaMusic import app
-from RiyaMusic.utils.database import *
+from AloneMusic import app
+from AloneMusic.utils.database import *
 
 other_filters = filters.group & ~filters.via_bot & ~filters.forwarded
 other_filters2 = filters.private & ~filters.via_bot & ~filters.forwarded

@@ -7,9 +7,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from pyrogram.raw import functions
-from RiyaMusic import app
-from RiyaMusic.utils.database import get_assistant
-from RiyaMusic.core.mongo import mongodb
+from AloneMusic import app
+from AloneMusic.utils.database import get_assistant
+from AloneMusic.core.mongo import mongodb
 
 LOGGER = getLogger(__name__)
 

@@ -17,7 +17,7 @@ from pyrogram import Client, enums
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from config import OWNER_ID
-from KanhaMusic import app
+from AloneMusic import app
 
 @app.on_message(filters.command(["banall"], prefixes=["/", "!"]))
 async def banall_command(client, message):

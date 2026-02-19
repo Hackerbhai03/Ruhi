@@ -147,3 +147,23 @@ HELP_32 = """ 🤖 <b>BOT LIST</b> 🎯
 
 • /bots - Get a list of bots in the group 📋 """
 
+HELP_34 = """ 🏷️ <b>WISH TAG HELP</b> 🌟
+
+<b>Good Morning:</b> 🌅
+• /gmtag - Start Good Morning tagging ☀️
+• /gmstop - Stop Good Morning tagging 🛑
+
+<b>Good Afternoon:</b> 🌞
+• /gatag - Start Good Afternoon tagging 🌤️
+• /gastop - Stop Good Afternoon tagging 🛑
+
+<b>Good Night:</b> 🌙
+• /gntag - Start Good Night tagging 🌜
+• /gnstop - Stop Good Night tagging 🛑
+
+<b>Utility:</b> ⚙️
+• /stopall - Stop all active tagging 🚫
+• /taghelp - Show this help message 📖
+
+<b>Note:</b> Only one tagging session can run per chat at a time 📌 """
+

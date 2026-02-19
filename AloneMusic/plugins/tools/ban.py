@@ -11,13 +11,17 @@ from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
 )
+
 from string import ascii_lowercase
 from typing import Dict, Union
 
 from AloneMusic import app
 from AloneMusic.misc import SUDOERS
 from AloneMusic.core.mongo import mongodb
-from AloneMusic.utils.error import capture_err
+
+# ❌ Removed this (file not found)
+# from AloneMusic.utils.error import capture_err
+
 from AloneMusic.utils.keyboard import ikb
 from AloneMusic.utils.database import save_filter
 from AloneMusic.utils.functions import (
@@ -25,7 +29,10 @@ from AloneMusic.utils.functions import (
     extract_user_and_reason,
     time_converter,
 )
+
+# ✅ Fixed this (ShrutiMusic → AloneMusic)
 from AloneMusic.utils.permissions import adminsOnly, member_permissions
+
 from config import BANNED_USERS
 
 warnsdb = mongodb.warns

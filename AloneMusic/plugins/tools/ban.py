@@ -17,7 +17,7 @@ from typing import Dict, Union
 from AloneMusic import app
 from AloneMusic.misc import SUDOERS
 from AloneMusic.core.mongo import mongodb
-from AloneMusic.utils.error import capture_err
+from AloneMusic.utils.errors import capture_err
 from AloneMusic.utils.keyboard import ikb
 from AloneMusic.utils.database import save_filter
 from AloneMusic.utils.functions import (

@@ -142,3 +142,8 @@ HELP_11 = """ 🤬 <b>ɢᴀʟɪ ᴄᴏᴍᴍᴀɴᴅs</b> 😤
 <b>ᴄᴏᴍᴍᴀɴᴅs:</b>
 • /gali -sᴇɴᴅ ʀᴀɴᴅᴏᴍ ɢᴀʟɪ (ᴡᴏʀᴋs ɪɴ ᴅᴍ) 💢
 • .gali - ᴀʟᴛᴇʀɴᴇᴛɪᴠᴇ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ 🔥 """
+
+HELP_32 = """ 🤖 <b>BOT LIST</b> 🎯
+
+• /bots - Get a list of bots in the group 📋 """
+

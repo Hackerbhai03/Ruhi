@@ -1,4 +1,4 @@
-from SHUKLAMUSIC import app
+from AloneMusic import app
 from pyrogram import Client, filters
 from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton

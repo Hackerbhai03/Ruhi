@@ -5,11 +5,7 @@ from datetime import datetime
 from functools import wraps
 
 import aiofiles
-
-try:
-    from pyrogram.errors import ChatWriteForbidden
-except ImportError:
-    from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
+from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
 from AloneMusic import app
 from AloneMusic.utils.exceptions import is_ignored_error
@@ -17,6 +13,7 @@ from AloneMusic.utils.pastebin import AloneBin
 from config import DEBUG_IGNORE_LOG, LOGGER_ID
 
 DEBUG_LOG_FILE = "ignored_errors.log"
+
 
 
 # ========== Paste Fallback ==========

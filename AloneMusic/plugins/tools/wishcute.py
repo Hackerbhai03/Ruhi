@@ -4,7 +4,7 @@ import random
 import requests
 from AloneMusic import app 
 
-SUPPORT_CHAT = "MASTIWITHFRIENDSXD"
+SUPPORT_CHAT = "About_kanhaa"
 
 @app.on_message(filters.command("wish"))
 async def wish(_, m):

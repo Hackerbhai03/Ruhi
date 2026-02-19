@@ -143,11 +143,11 @@ HELP_11 = """ 🤬 <b>ɢᴀʟɪ ᴄᴏᴍᴍᴀɴᴅs</b> 😤
 • /gali -sᴇɴᴅ ʀᴀɴᴅᴏᴍ ɢᴀʟɪ (ᴡᴏʀᴋs ɪɴ ᴅᴍ) 💢
 • .gali - ᴀʟᴛᴇʀɴᴇᴛɪᴠᴇ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ 🔥 """
 
-HELP_32 = """ 🤖 <b>BOT LIST</b> 🎯
+HELP_12 = """ 🤖 <b>BOT LIST</b> 🎯
 
 • /bots - Get a list of bots in the group 📋 """
 
-HELP_34 = """ 🏷️ <b>WISH TAG HELP</b> 🌟
+HELP_13 = """ 🏷️ <b>WISH TAG HELP</b> 🌟
 
 <b>Good Morning:</b> 🌅
 • /gmtag - Start Good Morning tagging ☀️
@@ -167,7 +167,7 @@ HELP_34 = """ 🏷️ <b>WISH TAG HELP</b> 🌟
 
 <b>Note:</b> Only one tagging session can run per chat at a time 📌 """
 
-HELP_18 = """
+HELP_14 = """
 <b><u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs</b></u>
 /ban - Ban A User
 /banall - Ban All Users
@@ -196,4 +196,26 @@ HELP_18 = """
 /report | @admins | @admin - Report A Message To Admins.
 """
 
+HELP_15 = """🎤 <b>VC LOGGER</b> 📢
 
+🔔 <b>Voice Chat Notifications:</b>  
+- /vclogger - <b>ᴄʜᴇᴄᴋ ᴠᴄ ʟᴏɢɢᴇʀ ꜱᴛᴀᴛᴜꜱ</b> 📊  
+- /vclogger on - <b>ᴇɴᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ</b> ✅  
+- /vclogger off - <b>ᴅɪꜱᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ</b> 🚫  
+
+📝 <b>Alternative Commands:</b>  
+- /vclogger enable - <b>ᴛᴜʀɴ ᴏɴ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🔊  
+- /vclogger disable - <b>ᴛᴜʀɴ ᴏꜰꜰ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🔇  
+- /vclogger yes/no - <b>ǫᴜɪᴄᴋ ᴛᴏɢɢʟᴇ</b> ⚡  
+
+✨ <b>Features:</b>  
+- <b>ʀᴇᴀʟ-ᴛɪᴍᴇ ᴊᴏɪɴ/ʟᴇᴀᴠᴇ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🎵  
+- <b>ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ (10 ꜱᴇᴄ)</b> ⏱️  
+- <b>ʀᴀɴᴅᴏᴍ ᴡᴇʟᴄᴏᴍᴇ/ɢᴏᴏᴅʙʏᴇ ᴍᴇꜱꜱᴀɢᴇꜱ</b> 💬  
+- <b>ᴘᴇʀꜱɪꜱᴛᴇɴᴛ ꜱᴇᴛᴛɪɴɢꜱ (ꜱᴀᴠᴇᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ)</b> 💾  
+
+💡 <b>Tips:</b>  
+- <b>ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴛᴏɢɢʟᴇ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ</b> 👑  
+- <b>ᴋᴇᴇᴘꜱ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʟɪᴠᴇʟʏ & ɪɴꜰᴏʀᴍᴇᴅ</b> 🎉  
+- <b>ᴡᴏʀᴋꜱ ᴡɪᴛʜ ᴀʟʟ ᴘʀᴇꜰɪxᴇꜱ (., !, /, @, ?, ')</b> 🔧
+"""

@@ -13,7 +13,7 @@ from datetime import datetime
 from functools import wraps
 
 import aiofiles
-from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
+from pyrogram.error.exceptions.forbidden_403 import ChatWriteForbidden
 
 from AloneMusic import app
 from AloneMusic.utils.exceptions import is_ignored_error

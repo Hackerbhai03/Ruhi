@@ -14,18 +14,18 @@ from pyrogram.types import (
 from string import ascii_lowercase
 from typing import Dict, Union
 
-from ShrutiMusic import app
-from ShrutiMusic.misc import SUDOERS
-from ShrutiMusic.core.mongo import mongodb
-from ShrutiMusic.utils.error import capture_err
-from ShrutiMusic.utils.keyboard import ikb
-from ShrutiMusic.utils.database import save_filter
-from ShrutiMusic.utils.functions import (
+from AloneMusic import app
+from AloneMusic.misc import SUDOERS
+from AloneMusic.core.mongo import mongodb
+from AloneMusic.utils.error import capture_err
+from AloneMusic.utils.keyboard import ikb
+from AloneMusic.utils.database import save_filter
+from AloneMusic.utils.functions import (
     extract_user,
     extract_user_and_reason,
     time_converter,
 )
-from ShrutiMusic.utils.permissions import adminsOnly, member_permissions
+from AloneMusic.utils.permissions import adminsOnly, member_permissions
 from config import BANNED_USERS
 
 warnsdb = mongodb.warns

@@ -132,44 +132,8 @@ HELP_9 = """<blockquote><b><u>❖ ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ s�
 <b>๏ /settings -</b> sʜᴏᴡs ᴛʜᴇ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs ᴡɪᴛʜ ᴀɴ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪɴʟɪɴᴇ ᴍᴇɴᴜ.</blockquote>
 """
 
-HELP_10 = """<blockquote><b><u>ɪᴍᴀɢᴇ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ:</b></u>
-
-/tgm : ʀᴇᴘʟʏ ᴛᴏ ᴀɴ ᴀɴʏ ɪᴍᴀɢᴇ,ᴠɪᴅᴇᴏ ᴏʀ ɢɪғ</blockquote>
-"""
-
-HELP_11 = """ 🤬 <b>ɢᴀʟɪ ᴄᴏᴍᴍᴀɴᴅs</b> 😤
-
-<b>ᴄᴏᴍᴍᴀɴᴅs:</b>
-• /gali -sᴇɴᴅ ʀᴀɴᴅᴏᴍ ɢᴀʟɪ (ᴡᴏʀᴋs ɪɴ ᴅᴍ) 💢
-• .gali - ᴀʟᴛᴇʀɴᴇᴛɪᴠᴇ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ 🔥 """
-
-HELP_12 = """ 🤖 <b>BOT LIST</b> 🎯
-
-• /bots - Get a list of bots in the group 📋 """
-
-HELP_13 = """ 🏷️ <b>WISH TAG HELP</b> 🌟
-
-<b>Good Morning:</b> 🌅
-• /gmtag - Start Good Morning tagging ☀️
-• /gmstop - Stop Good Morning tagging 🛑
-
-<b>Good Afternoon:</b> 🌞
-• /gatag - Start Good Afternoon tagging 🌤️
-• /gastop - Stop Good Afternoon tagging 🛑
-
-<b>Good Night:</b> 🌙
-• /gntag - Start Good Night tagging 🌜
-• /gnstop - Stop Good Night tagging 🛑
-
-<b>Utility:</b> ⚙️
-• /stopall - Stop all active tagging 🚫
-• /taghelp - Show this help message 📖
-
-<b>Note:</b> Only one tagging session can run per chat at a time 📌 """
-
-HELP_14 = """
-<b><u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs</b></u>
-/ban - Ban A User
+HELP_14 = """<blockquote><b><u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs</b></u></blockquote>
+<blockquote>/ban - Ban A User
 /banall - Ban All Users
 /sban - Delete all messages of user that sended in group and ban the user
 /tban - Ban A User For Specific Time
@@ -193,29 +157,29 @@ HELP_14 = """
 /tmute - Mute A User For Specific Time
 /unmute - Unmute A User
 /zombies - Ban Deleted Accounts
-/report | @admins | @admin - Report A Message To Admins.
+/report | @admins | @admin - Report A Message To Admins.</blockquote>
 """
 
-HELP_15 = """🎤 <b>VC LOGGER</b> 📢
+HELP_15 = """<blockquote>🎤 <b>VC LOGGER</b> 📢</blockquote>
 
-🔔 <b>Voice Chat Notifications:</b>  
+<blockquote>🔔 <b>Voice Chat Notifications:</b>  
 - /vclogger - <b>ᴄʜᴇᴄᴋ ᴠᴄ ʟᴏɢɢᴇʀ ꜱᴛᴀᴛᴜꜱ</b> 📊  
 - /vclogger on - <b>ᴇɴᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ</b> ✅  
-- /vclogger off - <b>ᴅɪꜱᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ</b> 🚫  
+- /vclogger off - <b>ᴅɪꜱᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ</b> 🚫</blockquote>
 
-📝 <b>Alternative Commands:</b>  
+<blockquote>📝 <b>Alternative Commands:</b>  
 - /vclogger enable - <b>ᴛᴜʀɴ ᴏɴ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🔊  
 - /vclogger disable - <b>ᴛᴜʀɴ ᴏꜰꜰ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🔇  
-- /vclogger yes/no - <b>ǫᴜɪᴄᴋ ᴛᴏɢɢʟᴇ</b> ⚡  
+- /vclogger yes/no - <b>ǫᴜɪᴄᴋ ᴛᴏɢɢʟᴇ</b> ⚡</blockquote>
 
-✨ <b>Features:</b>  
+<blockquote>✨ <b>Features:</b>  
 - <b>ʀᴇᴀʟ-ᴛɪᴍᴇ ᴊᴏɪɴ/ʟᴇᴀᴠᴇ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🎵  
 - <b>ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ (10 ꜱᴇᴄ)</b> ⏱️  
 - <b>ʀᴀɴᴅᴏᴍ ᴡᴇʟᴄᴏᴍᴇ/ɢᴏᴏᴅʙʏᴇ ᴍᴇꜱꜱᴀɢᴇꜱ</b> 💬  
-- <b>ᴘᴇʀꜱɪꜱᴛᴇɴᴛ ꜱᴇᴛᴛɪɴɢꜱ (ꜱᴀᴠᴇᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ)</b> 💾  
+- <b>ᴘᴇʀꜱɪꜱᴛᴇɴᴛ ꜱᴇᴛᴛɪɴɢꜱ (ꜱᴀᴠᴇᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ)</b> 💾</blockquote>
 
-💡 <b>Tips:</b>  
+<blockquote>💡 <b>Tips:</b>  
 - <b>ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴛᴏɢɢʟᴇ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ</b> 👑  
 - <b>ᴋᴇᴇᴘꜱ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʟɪᴠᴇʟʏ & ɪɴꜰᴏʀᴍᴇᴅ</b> 🎉  
-- <b>ᴡᴏʀᴋꜱ ᴡɪᴛʜ ᴀʟʟ ᴘʀᴇꜰɪxᴇꜱ (., !, /, @, ?, ')</b> 🔧
+- <b>ᴡᴏʀᴋꜱ ᴡɪᴛʜ ᴀʟʟ ᴘʀᴇꜰɪxᴇꜱ (., !, /, @, ?, ')</b> 🔧</blockquote>
 """

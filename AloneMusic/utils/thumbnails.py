@@ -1,11 +1,11 @@
 import os
 import re
-import aiohttp
+
 import aiofiles
-import random
-import numpy as np
+import aiohttp
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from py_yt import VideosSearch
+
 from config import YOUTUBE_IMG_URL
 
 

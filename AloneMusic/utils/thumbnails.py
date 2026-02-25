@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from py_yt import VideosSearch
 from config import YOUTUBE_IMG_URL
 
-# --- Lund -- ---
+
 FONT_PATH = "AloneMusic/assets/font.ttf"
 FONT2_PATH = "AloneMusic/assets/font2.ttf"
 CACHE_DIR = "cache"
@@ -219,7 +219,7 @@ async def gen_thumb(videoid):
 
         # > Powered By
         draw = ImageDraw.Draw(canvas)
-        powered_text = "Kanha"
+        powered_text = ""
         try:
             pow_w = draw.textlength(powered_text, font=powered_font)
         except:
@@ -241,7 +241,7 @@ async def gen_thumb(videoid):
         return output_path
 
     except Exception as e:
-        print(f"[gen_thumb Error] {e}")
+        print(f"[get_thumb Error] {e}")
         import traceback
         traceback.print_exc()
         return YOUTUBE_IMG_URL

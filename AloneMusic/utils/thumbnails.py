@@ -241,7 +241,7 @@ async def gen_thumb(videoid):
         return output_path
 
     except Exception as e:
-        print(f"[get_thumb Error] {e}")
+        print(f"[gen_thumb Error] {e}")
         import traceback
         traceback.print_exc()
         return YOUTUBE_IMG_URL

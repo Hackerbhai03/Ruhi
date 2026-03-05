@@ -1,26 +1,29 @@
-import asyncio
+
+
 import random
 import string
-
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
-
 import config
-from AloneMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube,
-                        app)
-from AloneMusic.core.call import Alone
+from AloneMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from AloneMusic.core.call import Kanha
 from AloneMusic.utils import seconds_to_min, time_to_seconds
 from AloneMusic.utils.channelplay import get_channeplayCB
 from AloneMusic.utils.decorators.language import languageCB
 from AloneMusic.utils.decorators.play import PlayWrapper
 from AloneMusic.utils.formatters import formats
-from AloneMusic.utils.inline import (botplaylist_markup, livestream_markup,
-                                     playlist_markup, slider_markup,
-                                     track_markup)
+from AloneMusic.utils.inline import (
+    botplaylist_markup,
+    livestream_markup,
+    playlist_markup,
+    slider_markup,
+    track_markup,
+)
 from AloneMusic.utils.logger import play_logs
 from AloneMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
+
 
 @app.on_message(
    filters.command(["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"] ,prefixes=["/", "!", "%", ",", "", ".", "@", "#"])
@@ -48,13 +51,12 @@ async def play_commnd(
     plist_type = None
     spotify = None
     user_id = message.from_user.id
-    user_name = message.from_user.first_name
+    user_name = message.from_user.mention
     audio_telegram = (
         (message.reply_to_message.audio or message.reply_to_message.voice)
         if message.reply_to_message
         else None
     )
-
     video_telegram = (
         (message.reply_to_message.video or message.reply_to_message.document)
         if message.reply_to_message
@@ -63,7 +65,7 @@ async def play_commnd(
     if audio_telegram:
         if audio_telegram.file_size > 104857600:
             return await mystic.edit_text(_["play_5"])
-        seconds_to_min(audio_telegram.duration)
+        duration_min = seconds_to_min(audio_telegram.duration)
         if (audio_telegram.duration) > config.DURATION_LIMIT:
             return await mystic.edit_text(
                 _["play_6"].format(config.DURATION_LIMIT_MIN, app.mention)
@@ -245,38 +247,10 @@ async def play_commnd(
             img = details["thumb"]
             cap = _["play_10"].format(details["title"], details["duration_min"])
         elif await SoundCloud.valid(url):
-            try:
-                details, track_path = await SoundCloud.download(url)
-            except:
-                return await mystic.edit_text(_["play_3"])
-            duration_sec = details["duration_sec"]
-            if duration_sec > config.DURATION_LIMIT:
-                return await mystic.edit_text(
-                    _["play_6"].format(
-                        config.DURATION_LIMIT_MIN,
-                        app.mention,
-                    )
-                )
-            try:
-                await stream(
-                    _,
-                    mystic,
-                    user_id,
-                    details,
-                    chat_id,
-                    user_name,
-                    message.chat.id,
-                    streamtype="soundcloud",
-                    forceplay=fplay,
-                )
-            except Exception as e:
-                ex_type = type(e).__name__
-                err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
-                return await mystic.edit_text(err)
-            return await mystic.delete()
+            return await mystic.edit_text("❌ SoundCloud streaming and downloading is currently disabled.")
         else:
             try:
-                await Alone.stream_call(url)
+                await Kanha.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
@@ -405,7 +379,7 @@ async def play_commnd(
                     ),
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-                return await play_logs(message, streamtype="Searched on Youtube")
+                return await play_logs(message, streamtype=f"Searched on Youtube")
             else:
                 buttons = track_markup(
                     _,
@@ -417,11 +391,11 @@ async def play_commnd(
                 await mystic.delete()
                 await message.reply_photo(
                     photo=img,
+                    has_spoiler=True,
                     caption=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-                return await play_logs(message, streamtype="URL Searched Inline")
-
+                return await play_logs(message, streamtype=f"URL Searched Inline")
 
 @app.on_callback_query(filters.regex("MusicStream") & ~BANNED_USERS)
 @languageCB
@@ -492,8 +466,8 @@ async def play_music(client, CallbackQuery, _):
     return await mystic.delete()
 
 
-@app.on_callback_query(filters.regex("AnonymousAdmin") & ~BANNED_USERS)
-async def anonymous_check(client, CallbackQuery):
+@app.on_callback_query(filters.regex("KanhamousAdmin") & ~BANNED_USERS)
+async def Kanhamous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
             "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
@@ -503,7 +477,7 @@ async def anonymous_check(client, CallbackQuery):
         pass
 
 
-@app.on_callback_query(filters.regex("AnonyPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("KanhaPlaylists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()

@@ -36,6 +36,7 @@ DEBUG_IGNORE_LOG = True
 
 # Get this value from  on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 8106551502))
+OWNER_USERNAME = getenv("OWNER_USERNAME", "Oyekanhaa")
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
